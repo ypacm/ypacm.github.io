@@ -3,18 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>about | ypacm</title>
+  <title>浅谈欧拉函数与容斥定理 | ypacm</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="about">
-<meta property="og:url" content="http://yoursite.com/about/index.html">
+  <meta name="description" content="在数论中，对正整数n，欧拉函数是小于n的数中与n互质的数的数目。
+正文举例以12为例，比12小且与12互质是数有1、5、7、11，共四个。12分解为质因子相乘的形式，即 12 = 2 * 2 * 3，所以12的质因子只有2和3。利用欧拉函数公式1φ(12) = 12 * (1 - 1/2 ) * (1 - 1/3 ) = 4
+我们可以得到相同的结果。
+分析欧拉函数中1/2和1/3比较明显的能看出说">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浅谈欧拉函数与容斥定理">
+<meta property="og:url" content="http://yoursite.com/2015/11/10/Euler's/index.html">
 <meta property="og:site_name" content="ypacm">
-<meta property="og:description">
-<meta property="og:updated_time" content="2015-11-05T07:31:10.046Z">
+<meta property="og:description" content="在数论中，对正整数n，欧拉函数是小于n的数中与n互质的数的数目。
+正文举例以12为例，比12小且与12互质是数有1、5、7、11，共四个。12分解为质因子相乘的形式，即 12 = 2 * 2 * 3，所以12的质因子只有2和3。利用欧拉函数公式1φ(12) = 12 * (1 - 1/2 ) * (1 - 1/3 ) = 4
+我们可以得到相同的结果。
+分析欧拉函数中1/2和1/3比较明显的能看出说">
+<meta property="og:updated_time" content="2015-11-10T05:08:10.671Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="about">
-<meta name="twitter:description">
+<meta name="twitter:title" content="浅谈欧拉函数与容斥定理">
+<meta name="twitter:description" content="在数论中，对正整数n，欧拉函数是小于n的数中与n互质的数的数目。
+正文举例以12为例，比12小且与12互质是数有1、5、7、11，共四个。12分解为质因子相乘的形式，即 12 = 2 * 2 * 3，所以12的质因子只有2和3。利用欧拉函数公式1φ(12) = 12 * (1 - 1/2 ) * (1 - 1/3 ) = 4
+我们可以得到相同的结果。
+分析欧拉函数中1/2和1/3比较明显的能看出说">
   
     <link rel="alternative" href="/atom.xml" title="ypacm" type="application/atom+xml">
   
@@ -197,11 +206,11 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap"><article id="page-undefined" class="article article-type-page" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-Euler&#39;s" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
-  	<time datetime="2015-11-05T07:31:10.000Z" itemprop="datePublished">2015-11-05</time>
+      <a href="/2015/11/10/Euler's/" class="article-date">
+  	<time datetime="2015-11-10T05:08:10.671Z" itemprop="datePublished">2015-11-10</time>
 </a>
     </div>
   
@@ -214,7 +223,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      about
+      浅谈欧拉函数与容斥定理
     </h1>
   
 
@@ -222,15 +231,29 @@
       
       <div class="article-info article-info-post">
         
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/acm/">acm</a>
+	</div>
+
 
         
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
+	</div>
+
         <div class="clearfix"></div>
       </div>
       
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>在数论中，对正整数n，<a href="http://baike.baidu.com/link?url=Qw1iXy3ykT6iV7HlF-k9gU6Yb3kzJ8BUu0y0LAY8KiYU1ZHTV_FGf2DjGo976u0UBLHV5Ix1aD3tCvA_SYUEza" target="_blank" rel="external">欧拉函数</a>是小于n的数中与n互质的数的数目。</p>
+<h2 id="正文">正文</h2><h3 id="举例">举例</h3><p>以12为例，比12小且与12<a href="http://baike.baidu.com/link?url=UgbrIJcZFLL7Lr6Ppssbo4vmcrmHrTmIiwJRRwZ4FFvRBO63wlWeLTVmwBJhTF8Uf7n1YIBQjU92FpRorzSO1_" target="_blank" rel="external">互质</a>是数有1、5、7、11，共四个。<br>12分解为质因子相乘的形式，即 12 = 2 * 2 * 3，所以12的质因子只有2和3。<br>利用欧拉函数公式<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">φ(<span class="number">12</span>) = <span class="number">12</span> * (<span class="number">1</span> - <span class="number">1</span>/<span class="number">2</span> ) * (<span class="number">1</span> - <span class="number">1</span>/<span class="number">3</span> ) = <span class="number">4</span></span><br></pre></td></tr></table></figure></p>
+<p>我们可以得到相同的结果。</p>
+<h3 id="分析">分析</h3><p>欧拉函数中1/2和1/3比较明显的能看出说的是12中能被2或者3整除的数字的个数。分成两个集合{2，3，4，5，6，8，10，12}和{3，6，9，12}，可以看到{6，12}在两个集合中都存在，因为这两个数都含有质因子2和3。<br>所以在计算时需要将重复减掉的部分补回去。将12的欧拉函数部分展开：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">φ(<span class="number">12</span>) = <span class="number">12</span> *(<span class="number">1</span> - <span class="number">1</span>/<span class="number">2</span> - <span class="number">1</span>/<span class="number">3</span> + <span class="number">1</span>/<span class="number">6</span>) = <span class="number">4</span></span><br></pre></td></tr></table></figure></p>
+<p>可文字表达成，小与12且与12互质的数的个数为12减去2的倍数，减去3的倍数，加上2*3的倍数。<br>这一部分就是简单的容斥原理。</p>
+<h3 id="扩展">扩展</h3><p>从欧拉函数可以看出，*一个数的欧拉函数就是本身∏（ 1 - 1 / 质因子） ，所以用筛素数同样的方法顺便能把欧拉函数的值求出来。<br>贴上自己用的模板代码</p>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="preprocessor">#<span class="keyword">define</span> M <span class="number">3000000</span></span></span><br><span class="line">__int64 eular[M+<span class="number">5</span>];</span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">init</span><span class="params">()</span></span><br><span class="line"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i, j;</span><br><span class="line">    <span class="built_in">memset</span>(eular, <span class="number">0</span>, <span class="keyword">sizeof</span>(eular));</span><br><span class="line">    eular[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">for</span>( i = <span class="number">2</span>; i &lt; M; i++) </span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">if</span>(!eular[i])</span><br><span class="line">		&#123;</span><br><span class="line">			<span class="keyword">for</span>(j = i; j &lt; M; j+=i)</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="keyword">if</span>(!eular[j])</span><br><span class="line">					eular[j] = j;</span><br><span class="line">				eular[j] = eular[j] / i * (i-<span class="number">1</span>);</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">    <span class="keyword">return</span> ;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
       
     </div>
@@ -239,13 +262,13 @@
   
     
 <div class="copyright">
-  <p><span>本文标题:</span><a href="/about/index.html">about</a></p>
+  <p><span>本文标题:</span><a href="/2015/11/10/Euler's/">浅谈欧拉函数与容斥定理</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 ypacm 的个人博客">ypacm</a></p>
-  <p><span>发布时间:</span>2015年11月5日 - 15时11分</p>
-  <p><span>最后更新:</span>2015年11月5日 - 15时11分</p>
+  <p><span>发布时间:</span>2015年11月10日 - 13时11分</p>
+  <p><span>最后更新:</span>2015年11月10日 - 13时11分</p>
   <p>
-    <span>原始链接:</span><a href="/about/index.html" title="about">http://yoursite.com/about/index.html</a>
-    <span class="btn" data-clipboard-text="原文: http://yoursite.com/about/index.html　　作者: ypacm" title="点击复制文章链接">
+    <span>原始链接:</span><a href="/2015/11/10/Euler's/" title="浅谈欧拉函数与容斥定理">http://yoursite.com/2015/11/10/Euler&#39;s/</a>
+    <span class="btn" data-clipboard-text="原文: http://yoursite.com/2015/11/10/Euler&#39;s/　　作者: ypacm" title="点击复制文章链接">
         <i class="fa fa-clipboard"></i>
     </span>
   </p>
@@ -268,6 +291,17 @@
 
 
 
+<nav id="article-nav">
+  
+  
+    <div id="article-nav-older" class="article-nav-title">
+      <a href="/2015/11/07/你好-世界 (中文版)/">
+        你好-世界（Hello-World中文版）
+      </a>
+    </div>
+  
+</nav>
+
   
 </article>
 
@@ -275,7 +309,7 @@
 <!-- Show TOC and tocButton in default, Hide TOC via putting "toc: false" before "---" at [post].md -->
 <div id="toc" class="toc-article">
 <strong class="toc-title">文章目录</strong>
-
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#正文"><span class="toc-number">1.</span> <span class="toc-text">正文</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#举例"><span class="toc-number">1.1.</span> <span class="toc-text">举例</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分析"><span class="toc-number">1.2.</span> <span class="toc-text">分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#扩展"><span class="toc-number">1.3.</span> <span class="toc-text">扩展</span></a></li></ol></li></ol>
 </div>
 <style type="text/css">
   .left-col .switch-btn {
@@ -330,7 +364,7 @@
 
   <section id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="page-undefined" data-title="about" data-url="http://yoursite.com/about/index.html"></div>
+    <div class="ds-thread" data-thread-key="post-Euler&#39;s" data-title="浅谈欧拉函数与容斥定理" data-url="http://yoursite.com/2015/11/10/Euler&#39;s/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -359,6 +393,17 @@
     <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
     </div>
 
+
+  
+  
+    <div  class="post-nav-button">
+    <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+    <a href="/2015/11/07/你好-世界 (中文版)/" title="下一篇: 你好-世界（Hello-World中文版）">
+    <i class="fa fa-angle-right"></i>
+    </a>
+    </div>
+  
+    
 
 </div>
       <footer id="footer">
@@ -396,7 +441,7 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
