@@ -118,7 +118,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/World/" style="font-size: 10px;">World</a> <a href="/tags/water/" style="font-size: 20px;">water</a> <a href="/tags/世界/" style="font-size: 10px;">世界</a> <a href="/tags/数论/" style="font-size: 10px;">数论</a> <a href="/tags/第一次社团比赛/" style="font-size: 20px;">第一次社团比赛</a>
+						<a href="/tags/water/" style="font-size: 20px;">water</a> <a href="/tags/数论/" style="font-size: 10px;">数论</a> <a href="/tags/第一次社团比赛/" style="font-size: 20px;">第一次社团比赛</a>
 					</div>
 				</section>
 				
@@ -202,7 +202,7 @@
   
     <div class="article-meta">
       <a href="/2015/11/17/ypoj2261/" class="article-date">
-  	<time datetime="2015-11-17T13:00:05.000Z" itemprop="datePublished">2015-11-17</time>
+  	<time datetime="2015-11-17T13:00:07.000Z" itemprop="datePublished">2015-11-17</time>
 </a>
     </div>
   
@@ -215,7 +215,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/17/ypoj2261/">ypoj 2261 拆分字符</a>
+      <a class="article-title" href="/2015/11/17/ypoj2261/">ypoj 2261 H 拆分字符</a>
     </h1>
   
 
@@ -281,7 +281,7 @@
   
     <div class="article-meta">
       <a href="/2015/11/17/ypoj2260/" class="article-date">
-  	<time datetime="2015-11-17T13:00:04.000Z" itemprop="datePublished">2015-11-17</time>
+  	<time datetime="2015-11-17T13:00:06.000Z" itemprop="datePublished">2015-11-17</time>
 </a>
     </div>
   
@@ -294,7 +294,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/17/ypoj2260/">ypoj 2260 摆花</a>
+      <a class="article-title" href="/2015/11/17/ypoj2260/">ypoj 2260 G 摆花</a>
     </h1>
   
 
@@ -357,11 +357,11 @@
 
 
   
-    <article id="post-ypoj2258" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-ypoj2259" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/11/17/ypoj2258/" class="article-date">
-  	<time datetime="2015-11-17T13:00:03.000Z" itemprop="datePublished">2015-11-17</time>
+      <a href="/2015/11/17/ypoj2259/" class="article-date">
+  	<time datetime="2015-11-17T13:00:05.000Z" itemprop="datePublished">2015-11-17</time>
 </a>
     </div>
   
@@ -374,7 +374,86 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/17/ypoj2258/">ypoj 2258 网店</a>
+      <a class="article-title" href="/2015/11/17/ypoj2259/">ypoj 2259 F 完数</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="题目名称：完数">题目名称：<a href="http://10.7.0.39:8080/acmhome/problemdetail.do?&amp;method=showdetail&amp;id=2259" target="_blank" rel="external">完数</a></h2><h3 id="描述">描述</h3><blockquote>
+<p>完数的定义：如果一个大于1的正整数的所有因子(除它本身之外)之和等于它的本身，则称这个数是完数，比如6，28都是完数：6=1+2+3；28=1+2+4+7+14。<br>本题的任务是判断两个正整数之间完数的个数。</p>
+</blockquote>
+<h3 id="输入">输入</h3><blockquote>
+<p>输入数据包含多行，第一行是一个正整数n，表示测试实例的个数，然后就是n个测试实例，每个实例占一行，由两个正整数num1和num2组成,(1&lt;num1,num2&lt;11000) 。</p>
+</blockquote>
+<h3 id="输出">输出</h3><blockquote>
+<p>对于每组测试数据，请输出num1和num2之间（包括num1和num2）存在的完数个数。</p>
+</blockquote>
+<h3 id="样例输入">样例输入</h3><blockquote>
+<p>2<br>2 5<br>5 7</p>
+</blockquote>
+<h3 id="样例输出">样例输出</h3><blockquote>
+<p>0<br>1</p>
+</blockquote>
+<h2 id="题解">题解</h2><blockquote>
+<p>输出完数的个数，注意num1可能比num2大所以要注意交换位置；找出X的所有因子时，如果X%i==0，那么i和X/i都是他的因子。因此循环判断是只用判断到sqrt(x)即可，否则会超时。</p>
+</blockquote>
+<h2 id="代码">代码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">#include&lt;stdio.h&gt;</span></span><br><span class="line">int <span class="function"><span class="title">main</span></span>()</span><br><span class="line">&#123;</span><br><span class="line">	int t,n,m,f;</span><br><span class="line">	int sum,i,j;</span><br><span class="line">	<span class="keyword">while</span>(~scanf(<span class="string">"%d"</span>,&amp;t))</span><br><span class="line">	&#123;</span><br><span class="line">		<span class="keyword">while</span>(t --)</span><br><span class="line">		&#123;</span><br><span class="line">			scanf(<span class="string">"%d %d"</span>,&amp;n,&amp;m);</span><br><span class="line">			<span class="keyword">if</span>(n&gt;m)</span><br><span class="line">			&#123;</span><br><span class="line">				f=n;</span><br><span class="line">				n=m;</span><br><span class="line">				m=f;</span><br><span class="line">			&#125;</span><br><span class="line">			f=<span class="number">0</span>;</span><br><span class="line">			<span class="keyword">for</span>(i=n;i&lt;=m;i++)</span><br><span class="line">			&#123;</span><br><span class="line">				sum=<span class="number">0</span>;</span><br><span class="line">				<span class="keyword">for</span>(j=<span class="number">2</span>;j*j&lt;=i;j++)</span><br><span class="line">				&#123;</span><br><span class="line">					<span class="keyword">if</span>(i%j==<span class="number">0</span>)</span><br><span class="line">					&#123;    </span><br><span class="line">                                                <span class="keyword">if</span>(i/j!=j)</span><br><span class="line">                                                &#123;</span><br><span class="line">						sum=sum+j;</span><br><span class="line">						sum+=i/j;</span><br><span class="line">                                                &#125;</span><br><span class="line">                                                <span class="keyword">else</span></span><br><span class="line">                                                &#123;</span><br><span class="line">                                                  sum=sum+j;</span><br><span class="line">                                                &#125;</span><br><span class="line">					</span><br><span class="line">					&#125;</span><br><span class="line">				&#125;</span><br><span class="line">				<span class="keyword">if</span>(sum+<span class="number">1</span>==i)</span><br><span class="line">				&#123;</span><br><span class="line">					f++;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%d\n"</span>,f);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/ypoj/">ypoj</a>
+	</div>
+
+
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/water/">water</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/第一次社团比赛/">第一次社团比赛</a></li></ul>
+	</div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-ypoj2258" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/11/17/ypoj2258/" class="article-date">
+  	<time datetime="2015-11-17T13:00:04.000Z" itemprop="datePublished">2015-11-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/17/ypoj2258/">ypoj 2258 E 网店</a>
     </h1>
   
 
@@ -384,7 +463,7 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="题目名称：网店">题目名称：<a href="http://10.7.0.39:8080/acmhome/problemdetail.do?&amp;method=showdetail&amp;id=2258" target="_blank" rel="external">网店</a></h2><h3 id="描述">描述</h3><blockquote>
-<p>小米在网上开了一家小小小小的网店，双11来临！小米的小店终于迎来了买家（T_T）,他的银行账户在这一天内，不断收到钱，当然他也抢购了不少东西，现在他想知道他在交易过程中最大交易值与最小交易值，双11那天他卖出物品价格的平均值（卖出物品的价格均为正数），以及他现在银行账户内的余额（他开始的账户余额为0，由于他在银行的信任度不错，他的账户余额可谓负）</p>
+<p>小米在网上开了一家小小小小的网店，双11来临！小米的小店终于迎来了买家（T_T）,他的银行账户在这一天内，不断收到钱，当然他也抢购了不少东西，现在他想知道他在交易过程中最大交易值与最小交易值，双11那天他卖出物品价格的平均值（卖出物品的价格均为正数），以及他现在银行账户内的余额（他开始的账户余额为0，由于他在银行的信任度不错，他的账户余额可为负）</p>
 </blockquote>
 <h3 id="输入">输入</h3><blockquote>
 <p>输入数据有多组，每组测试包含两行，分别是整数n (0 &lt; n &lt; 100)，表示他在这一天内的交易次数，以及n个整数，表示每次交易的收入。（每次的交易额的绝对值均小于1000，他买东西时，交易额定为负）</p>
@@ -434,11 +513,11 @@
 
 
   
-    <article id="post-ypoj2256" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-ypoj2257" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/11/17/ypoj2256/" class="article-date">
-  	<time datetime="2015-11-17T13:00:01.000Z" itemprop="datePublished">2015-11-17</time>
+      <a href="/2015/11/17/ypoj2257/" class="article-date">
+  	<time datetime="2015-11-17T13:00:03.000Z" itemprop="datePublished">2015-11-17</time>
 </a>
     </div>
   
@@ -451,7 +530,86 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/17/ypoj2256/">ypoj 2256 闰年的生日</a>
+      <a class="article-title" href="/2015/11/17/ypoj2257/">ypoj 2257 D 公交搭乘问题</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="题目名称：公交搭乘问题">题目名称：<a href="http://10.7.0.39:8080/acmhome/problemdetail.do?&amp;method=showdetail&amp;id=2257" target="_blank" rel="external">公交搭乘问题</a></h2><h3 id="描述">描述</h3><blockquote>
+<p>伊卡洛斯的老家（Castle in the Sky）有一条很长的路，马路上设有n个公交汽车站。<br>公交汽车站从左到右标号为1到n。有m个人想要乘公交。<br>你的任务是找出每个人到终点为止所需要的时间。<br>注意：你需要用来解决这道题目的信息在Input里面，请仔细阅读。</p>
+</blockquote>
+<h3 id="输入">输入</h3><blockquote>
+<p>输入的第一行包含一个整数T (1≤T≤60)，表示测试数据的组数。<br>对于每组测试数据：第一行包含两个整数n和m (2≤n,m≤10^4)，表示公交车站的数目和乘客的数目。<br>接下来一行包含n-1个整数, d1,d2,…,dn-1 (1≤di≤10^4)。<br>di表示第i个公交站和第i+1个公交站之间的距离。<br>在接下来的m行, 每行包含两个整数xi和yi (1≤xi,yi≤n,xi≠yi),<br>表示第i个人时刻0的时候在第xi个公交站并且想要到第yi个公交站去。(1≤i≤m)<br>对于第i个人, 公交车在时刻0的时候从第((i-1) mod n)+1个公交站点出发，并且公交一开始往右开。<br>公交到达站点n的时候会立刻转向往左开，同样当公交到达站点1的时候也会立刻转向往右开。<br>你可以认为公交每秒只开一个单位距离，你只需要考虑公交开的时间。</p>
+</blockquote>
+<h3 id="输出">输出</h3><blockquote>
+<p>对于每个人输出到达目的地需要的最少时间。</p>
+</blockquote>
+<h3 id="样例输入">样例输入</h3><blockquote>
+<p>1<br>7 3<br>2 3 4 3 4 5<br>1 7<br>4 5</p>
+</blockquote>
+<h3 id="样例输出">样例输出</h3><blockquote>
+<p>21<br>10<br>28</p>
+</blockquote>
+<h2 id="题解">题解</h2><h4 id="这道题是一道模拟水题。其实题目大意懂了这道题就差不多了，不过要注意四个地方。">这道题是一道模拟水题。其实题目大意懂了这道题就差不多了，不过要注意四个地方。</h4><h5 id="一开始汽车开的方向">一开始汽车开的方向</h5><p><img src="http://i5.tietuku.com/79bfd088ab736e56.png" alt="pic1"></p>
+<h5 id="当a站的位置在b站的前面时，又分为两种情况">当a站的位置在b站的前面时，又分为两种情况</h5><h6 id="当人在a站和b站之间时,人要先到达终点再从终点到达a站,再从a站到达起点，再从起点到达b站">当人在a站和b站之间时,人要先到达终点再从终点到达a站,再从a站到达起点，再从起点到达b站</h6><p><img src="http://i5.tietuku.com/564c25ee5784982b.png" alt="pic2"></p>
+<h6 id="当人在a站之前,人直接到达a站_再从a站到达b站">当人在a站之前,人直接到达a站 再从a站到达b站</h6><p><img src="http://i5.tietuku.com/d38f2408105475e3.png" alt="pic3"></p>
+<h2 id="代码">代码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include&lt;iostream&gt;</span></span><br><span class="line"><span class="comment">#include&lt;cstring&gt;</span></span><br><span class="line"><span class="comment">#include&lt;cmath&gt;</span></span><br><span class="line"><span class="comment">#include&lt;queue&gt;</span></span><br><span class="line"><span class="comment">#include&lt;vector&gt;</span></span><br><span class="line"><span class="comment">#include&lt;functional&gt;</span></span><br><span class="line"><span class="comment">#include&lt;algorithm&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line">int bu[<span class="number">100011</span>];</span><br><span class="line">int <span class="function"><span class="title">main</span></span>()</span><br><span class="line">&#123;</span><br><span class="line">    int i,j;</span><br><span class="line">    int n,m;</span><br><span class="line">    int T;</span><br><span class="line">    int a,b;</span><br><span class="line">    int d;</span><br><span class="line">    int sum;</span><br><span class="line">    <span class="keyword">while</span>(~scanf(<span class="string">"%d"</span>,&amp;T))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span>(T--)</span><br><span class="line">        &#123;</span><br><span class="line">            scanf(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</span><br><span class="line">            bu[<span class="number">1</span>]=<span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;=n;i++)</span><br><span class="line">            &#123;</span><br><span class="line">                scanf(<span class="string">"%lld"</span>,&amp;d);</span><br><span class="line">                bu[i]=bu[i-<span class="number">1</span>]+d;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=m;i++)</span><br><span class="line">            &#123;</span><br><span class="line">                int t;</span><br><span class="line">                t=((i-<span class="number">1</span>)%n)+<span class="number">1</span>;</span><br><span class="line">                scanf(<span class="string">"%d%d"</span>,&amp;a,&amp;b);</span><br><span class="line">                <span class="keyword">if</span>(a&gt;b)</span><br><span class="line">                &#123;</span><br><span class="line">                    sum=bu[n]-bu[t]+bu[n]-bu[b];//当a站位置在b站后面时</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">if</span>(t&gt;a)</span><br><span class="line">                    &#123;</span><br><span class="line">                        sum=bu[n]-bu[t]+bu[n]+bu[b];//当人在a</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">else</span></span><br><span class="line">                    &#123;</span><br><span class="line">                        sum=bu[b]-bu[t];</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,sum);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/ypoj/">ypoj</a>
+	</div>
+
+
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/water/">water</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/第一次社团比赛/">第一次社团比赛</a></li></ul>
+	</div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-ypoj2256" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/11/17/ypoj2256/" class="article-date">
+  	<time datetime="2015-11-17T13:00:02.000Z" itemprop="datePublished">2015-11-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/17/ypoj2256/">ypoj 2256 C 闰年的生日</a>
     </h1>
   
 
@@ -511,6 +669,89 @@
 
 
   
+    <article id="post-ypoj2255" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/11/17/ypoj2255/" class="article-date">
+  	<time datetime="2015-11-17T13:00:01.000Z" itemprop="datePublished">2015-11-17</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/11/17/ypoj2255/">ypoj 2255 B 神奇的循环</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="题目名称：神奇的循环">题目名称：<a href="http://10.7.0.39:8080/acmhome/problemdetail.do?&amp;method=showdetail&amp;id=2255" target="_blank" rel="external">神奇的循环</a></h2><h3 id="描述">描述</h3><blockquote>
+<p>我们知道，在编程中，我们时常需要考虑到时间复杂度，特别是对于循环的部分。例如，<br>如果代码中出现<br>for(i=1;i&lt;=n;i++) OP ;<br>那么做了n次OP运算，如果代码中出现<br>for(i=1;i&lt;=n; i++)<br>  for(j=i+1;j&lt;=n; j++) OP;<br>那么做了n*(n-1)/2 次OP 操作。<br>现在给你已知有m层for循环操作，且每次for中变量的起始值是上一个变量的起始值＋1（第一个变量的起始值是1），终止值都是一个输入的n，问最后OP有总共多少计算量。</p>
+</blockquote>
+<h3 id="输入">输入</h3><blockquote>
+<p>有T组数据，T&lt;=10000 (T=0时结束)。<br>每组数据有两个整数m和n，0&lt;m&lt;=2000，0&lt;n&lt;=2000。</p>
+</blockquote>
+<h3 id="输出">输出</h3><blockquote>
+<p>对于每组数据，输出一个值，表示总的计算量，也许这个数字很大，那么你只需要输出除1007留下的余数即可。</p>
+</blockquote>
+<h3 id="样例输入">样例输入</h3><blockquote>
+<p>2<br>1 3<br>2 3</p>
+</blockquote>
+<h3 id="样例输出">样例输出</h3><blockquote>
+<p>3<br>3</p>
+</blockquote>
+<h2 id="题解">题解</h2><p>第二题是本次比赛中最难的一题。<br>想要解此题，需要非常认真细微的观察。<br>假设当m=3,n=4时<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=<span class="number">4</span>;i++)</span><br><span class="line">&#123;</span><br><span class="line">        <span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;=<span class="number">4</span>;j++)</span><br><span class="line">        &#123;</span><br><span class="line">			<span class="keyword">for</span>(k=j+<span class="number">1</span>;k&lt;=<span class="number">4</span>;k++)</span><br><span class="line">             &#123;</span><br><span class="line">             &#125;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>这个for循环显然可以转化成<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(i=<span class="number">0</span>;i&lt;=<span class="number">3</span>;i++)</span><br><span class="line">&#123;</span><br><span class="line">        <span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;=<span class="number">3</span>;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span>(k=j+<span class="number">1</span>;k&lt;=<span class="number">3</span>;k++)</span><br><span class="line">            &#123;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>当i=0时，内层循环相当于<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(j=<span class="number">1</span>;j&lt;=<span class="number">3</span>;j++)</span><br><span class="line">&#123;</span><br><span class="line">         <span class="keyword">for</span>(k=j+<span class="number">1</span>;k&lt;=<span class="number">3</span>;k++)</span><br><span class="line">         &#123;</span><br><span class="line">         &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>显然这就是m=2,n=3时的for循环情况。</p>
+<p>当i!=0时，相当于<br><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=<span class="number">3</span>;i++)</span><br><span class="line">&#123;</span><br><span class="line">        <span class="keyword">for</span>(j=i+<span class="number">1</span>;j&lt;=<span class="number">3</span>;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">for</span>(k=j+<span class="number">1</span>;k&lt;=<span class="number">3</span>;k++)</span><br><span class="line">            &#123;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>显然这与m=3,n=3时的for循环一样。</p>
+<p>所以可以得出结论a[3,4]=a[2,3]+a[3,3]。<br>延伸开来可以发现在n&gt;1,m&gt;1时所有的a[m,n]=a[m-1,n-1]+a[m,n-1] 都成立。<br>当m=1时,显然a[1,n]=n。<br>因为一旦m&gt;n，a[m,n]必为0，所以不需要考虑n=1时的情况。<br>这样就解好了这题。可以直接在输入前开个二维数组初始化打表，注意对1007取余。<br>这种解法叫递推或动态规划。</p>
+
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-category tagcloud">
+	<a class="article-category-link" href="/categories/ypoj/">ypoj</a>
+	</div>
+
+
+      
+	<div class="article-tag tagcloud">
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/water/">water</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/第一次社团比赛/">第一次社团比赛</a></li></ul>
+	</div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-ypoj2254" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
@@ -528,7 +769,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/17/ypoj2254/">ypoj 2254 小明的创意大赛</a>
+      <a class="article-title" href="/2015/11/17/ypoj2254/">ypoj 2254 A 小明的创意大赛</a>
     </h1>
   
 
@@ -636,146 +877,6 @@
       
 	<div class="article-tag tagcloud">
 		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/数论/">数论</a></li></ul>
-	</div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-你好-世界 (中文版)" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/11/10/你好-世界 (中文版)/" class="article-date">
-  	<time datetime="2015-11-10T13:00:00.000Z" itemprop="datePublished">2015-11-10</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/10/你好-世界 (中文版)/">你好-世界（Hello-World中文版）</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>欢迎来到 <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a> 的世界! 这是你的第一篇文章. 点击 <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> 获得更多的信息. 如果你在使用hexo时有什么问题，你可以在<a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> 或者在 <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a> 问我.</p>
-<h2 id="快速开始">快速开始</h2><h3 id="创建一篇新的文章">创建一篇新的文章</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="在本地运行">在本地运行</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="生成静态文件">生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="部署到远程站点">部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/你好/">你好</a>
-	</div>
-
-
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/世界/">世界</a></li></ul>
-	</div>
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2015/11/10/hello-world/" class="article-date">
-  	<time datetime="2015-11-10T13:00:00.000Z" itemprop="datePublished">2015-11-10</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/11/10/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-category tagcloud">
-	<a class="article-category-link" href="/categories/Hello/">Hello</a>
-	</div>
-
-
-      
-	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/World/">World</a></li></ul>
 	</div>
 
       
