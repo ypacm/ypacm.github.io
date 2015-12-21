@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>ypoj 2257 D 公交搭乘问题 | ypacm</title>
+  <title>ypoj 2257 公交搭乘问题 | ypacm</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="题目名称：公交搭乘问题描述
 伊卡洛斯的老家（Castle in the Sky）有一条很长的路，马路上设有n个公交汽车站。公交汽车站从左到右标号为1到n。有m个人想要乘公交。你的任务是找出每个人到终点为止所需要的时间。注意：你需要用来解决这道题目的信息在Input里面，请仔细阅读。
@@ -11,20 +11,17 @@
 输入
 输入的第一行包含一个整数T (1≤T≤60)，表示测试数据的组数。对于每组测试数据：第一行包含两个整数n和m">
 <meta property="og:type" content="article">
-<meta property="og:title" content="ypoj 2257 D 公交搭乘问题">
-<meta property="og:url" content="http://ypacm.github.io/2015/11/17/ypoj2257/index.html">
+<meta property="og:title" content="ypoj 2257 公交搭乘问题">
+<meta property="og:url" content="http://yoursite.com/2015/11/17/ypoj2257/index.html">
 <meta property="og:site_name" content="ypacm">
 <meta property="og:description" content="题目名称：公交搭乘问题描述
 伊卡洛斯的老家（Castle in the Sky）有一条很长的路，马路上设有n个公交汽车站。公交汽车站从左到右标号为1到n。有m个人想要乘公交。你的任务是找出每个人到终点为止所需要的时间。注意：你需要用来解决这道题目的信息在Input里面，请仔细阅读。
 
 输入
 输入的第一行包含一个整数T (1≤T≤60)，表示测试数据的组数。对于每组测试数据：第一行包含两个整数n和m">
-<meta property="og:image" content="http://i5.tietuku.com/79bfd088ab736e56.png">
-<meta property="og:image" content="http://i5.tietuku.com/564c25ee5784982b.png">
-<meta property="og:image" content="http://i5.tietuku.com/d38f2408105475e3.png">
-<meta property="og:updated_time" content="2015-11-18T05:17:20.030Z">
+<meta property="og:updated_time" content="2015-12-21T12:02:28.154Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ypoj 2257 D 公交搭乘问题">
+<meta name="twitter:title" content="ypoj 2257 公交搭乘问题">
 <meta name="twitter:description" content="题目名称：公交搭乘问题描述
 伊卡洛斯的老家（Castle in the Sky）有一条很长的路，马路上设有n个公交汽车站。公交汽车站从左到右标号为1到n。有m个人想要乘公交。你的任务是找出每个人到终点为止所需要的时间。注意：你需要用来解决这道题目的信息在Input里面，请仔细阅读。
 
@@ -134,7 +131,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/water/" style="font-size: 20px;">water</a> <a href="/tags/数论/" style="font-size: 10px;">数论</a> <a href="/tags/第一次社团比赛/" style="font-size: 20px;">第一次社团比赛</a>
+						<a href="/tags/2015年社团年终比赛/" style="font-size: 16.67px;">2015年社团年终比赛</a> <a href="/tags/water/" style="font-size: 20px;">water</a> <a href="/tags/数论/" style="font-size: 10px;">数论</a> <a href="/tags/第一次社团比赛/" style="font-size: 13.33px;">第一次社团比赛</a>
 					</div>
 				</section>
 				
@@ -229,7 +226,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      ypoj 2257 D 公交搭乘问题
+      ypoj 2257 公交搭乘问题
     </h1>
   
 
@@ -268,10 +265,8 @@
 <h3 id="样例输出">样例输出</h3><blockquote>
 <p>21<br>10<br>28</p>
 </blockquote>
-<h2 id="题解">题解</h2><h4 id="这道题是一道模拟水题。其实题目大意懂了这道题就差不多了，不过要注意四个地方。">这道题是一道模拟水题。其实题目大意懂了这道题就差不多了，不过要注意四个地方。</h4><h5 id="一开始汽车开的方向">一开始汽车开的方向</h5><p><img src="http://i5.tietuku.com/79bfd088ab736e56.png" alt="pic1"></p>
-<h5 id="当a站的位置在b站的前面时，又分为两种情况">当a站的位置在b站的前面时，又分为两种情况</h5><h6 id="当人在a站和b站之间时,人要先到达终点再从终点到达a站,再从a站到达起点，再从起点到达b站">当人在a站和b站之间时,人要先到达终点再从终点到达a站,再从a站到达起点，再从起点到达b站</h6><p><img src="http://i5.tietuku.com/564c25ee5784982b.png" alt="pic2"></p>
-<h6 id="当人在a站之前,人直接到达a站_再从a站到达b站">当人在a站之前,人直接到达a站 再从a站到达b站</h6><p><img src="http://i5.tietuku.com/d38f2408105475e3.png" alt="pic3"></p>
-<h2 id="代码">代码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#include&lt;iostream&gt;</span></span><br><span class="line"><span class="comment">#include&lt;cstring&gt;</span></span><br><span class="line"><span class="comment">#include&lt;cmath&gt;</span></span><br><span class="line"><span class="comment">#include&lt;queue&gt;</span></span><br><span class="line"><span class="comment">#include&lt;vector&gt;</span></span><br><span class="line"><span class="comment">#include&lt;functional&gt;</span></span><br><span class="line"><span class="comment">#include&lt;algorithm&gt;</span></span><br><span class="line">using namespace std;</span><br><span class="line">int bu[<span class="number">100011</span>];</span><br><span class="line">int <span class="function"><span class="title">main</span></span>()</span><br><span class="line">&#123;</span><br><span class="line">    int i,j;</span><br><span class="line">    int n,m;</span><br><span class="line">    int T;</span><br><span class="line">    int a,b;</span><br><span class="line">    int d;</span><br><span class="line">    int sum;</span><br><span class="line">    <span class="keyword">while</span>(~scanf(<span class="string">"%d"</span>,&amp;T))</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">while</span>(T--)</span><br><span class="line">        &#123;</span><br><span class="line">            scanf(<span class="string">"%d%d"</span>,&amp;n,&amp;m);</span><br><span class="line">            bu[<span class="number">1</span>]=<span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span>(i=<span class="number">2</span>;i&lt;=n;i++)</span><br><span class="line">            &#123;</span><br><span class="line">                scanf(<span class="string">"%lld"</span>,&amp;d);</span><br><span class="line">                bu[i]=bu[i-<span class="number">1</span>]+d;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">for</span>(i=<span class="number">1</span>;i&lt;=m;i++)</span><br><span class="line">            &#123;</span><br><span class="line">                int t;</span><br><span class="line">                t=((i-<span class="number">1</span>)%n)+<span class="number">1</span>;</span><br><span class="line">                scanf(<span class="string">"%d%d"</span>,&amp;a,&amp;b);</span><br><span class="line">                <span class="keyword">if</span>(a&gt;b)</span><br><span class="line">                &#123;</span><br><span class="line">                    sum=bu[n]-bu[t]+bu[n]-bu[b];//当a站位置在b站后面时</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                &#123;</span><br><span class="line">                    <span class="keyword">if</span>(t&gt;a)</span><br><span class="line">                    &#123;</span><br><span class="line">                        sum=bu[n]-bu[t]+bu[n]+bu[b];//当人在a</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">else</span></span><br><span class="line">                    &#123;</span><br><span class="line">                        sum=bu[b]-bu[t];</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="built_in">printf</span>(<span class="string">"%d\n"</span>,sum);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="题解">题解</h2><p>对于第一个人, 公交在站点1出发, 然后这个人在时刻0上车。21秒之后，公交到达站点7。<br>对于第二个人，公交在站点2出发。7秒之后，公交到达站点4，这个人上车。<br>之后又过了3秒，公交到达站点5.总共用了10秒。<br>对于第三个人，公交在站点3出发。7秒之后，公交到达站点5，这个人上车。<br>之后过了9秒，公交达到站点7，然后转向开往站点0。<br>之后经过12秒，公交达到站点4。因此总共需要28秒时间。</p>
+<h2 id="代码">代码</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">#include&lt;stdio.h&gt;</span></span><br><span class="line">int <span class="function"><span class="title">main</span></span>()</span><br><span class="line">&#123;</span><br><span class="line">	int n,m,min,max,sum1,sum2;</span><br><span class="line">	double ave;</span><br><span class="line">	int i,j,k;</span><br><span class="line">	int a[<span class="number">105</span>];</span><br><span class="line">	<span class="keyword">while</span>(~scanf(<span class="string">"%d"</span>,&amp;n))</span><br><span class="line">	&#123;</span><br><span class="line">		sum1 = sum2 = k = <span class="number">0</span>;</span><br><span class="line">		min = <span class="number">10000</span>;</span><br><span class="line">		max = -<span class="number">10000</span>;</span><br><span class="line">		<span class="keyword">for</span>(i = <span class="number">0</span>;i &lt; n;i ++)</span><br><span class="line">		&#123;</span><br><span class="line">			scanf(<span class="string">"%d"</span>,&amp;a[i]);</span><br><span class="line">			<span class="keyword">if</span>(a[i] &lt; min)</span><br><span class="line">				min = a[i];</span><br><span class="line">			<span class="keyword">if</span>(a[i] &gt; max)</span><br><span class="line">				max = a[i];</span><br><span class="line">			<span class="keyword">if</span>(a[i] &gt; <span class="number">0</span>)</span><br><span class="line">			&#123;</span><br><span class="line">				sum1 += a[i];</span><br><span class="line">				k ++;</span><br><span class="line">			&#125;</span><br><span class="line">			sum2 += a[i];</span><br><span class="line">		&#125;</span><br><span class="line">		int t;</span><br><span class="line">		<span class="keyword">if</span>(k)</span><br><span class="line">		&#123;</span><br><span class="line">			ave = sum1 / k;</span><br><span class="line">			<span class="keyword">if</span>(k * ave == sum1)</span><br><span class="line">				t = <span class="number">1</span>;</span><br><span class="line">			<span class="keyword">else</span></span><br><span class="line">				t = <span class="number">0</span>;</span><br><span class="line">			ave = (sum1 * <span class="number">1.0</span>)/(k * <span class="number">1.0</span>);</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">		&#123;</span><br><span class="line">			ave = <span class="number">0</span>;</span><br><span class="line">			t = <span class="number">1</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">if</span>(t)</span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%d %d %.0lf %d\n"</span>,max,min,ave,sum2);</span><br><span class="line">		<span class="keyword">else</span></span><br><span class="line">			<span class="built_in">printf</span>(<span class="string">"%d %d %.2lf %d\n"</span>,max,min,ave,sum2);</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
       
     </div>
@@ -280,13 +275,13 @@
   
     
 <div class="copyright">
-  <p><span>本文标题:</span><a href="/2015/11/17/ypoj2257/">ypoj 2257 D 公交搭乘问题</a></p>
+  <p><span>本文标题:</span><a href="/2015/11/17/ypoj2257/">ypoj 2257 公交搭乘问题</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 ypacm 的个人博客">ypacm</a></p>
   <p><span>发布时间:</span>2015年11月17日 - 21时11分</p>
-  <p><span>最后更新:</span>2015年11月18日 - 13时11分</p>
+  <p><span>最后更新:</span>2015年12月21日 - 20时12分</p>
   <p>
-    <span>原始链接:</span><a href="/2015/11/17/ypoj2257/" title="ypoj 2257 D 公交搭乘问题">http://ypacm.github.io/2015/11/17/ypoj2257/</a>
-    <span class="btn" data-clipboard-text="原文: http://ypacm.github.io/2015/11/17/ypoj2257/　　作者: ypacm" title="点击复制文章链接">
+    <span>原始链接:</span><a href="/2015/11/17/ypoj2257/" title="ypoj 2257 公交搭乘问题">http://yoursite.com/2015/11/17/ypoj2257/</a>
+    <span class="btn" data-clipboard-text="原文: http://yoursite.com/2015/11/17/ypoj2257/　　作者: ypacm" title="点击复制文章链接">
         <i class="fa fa-clipboard"></i>
     </span>
   </p>
@@ -313,14 +308,14 @@
   
     <div id="article-nav-newer" class="article-nav-title">
       <a href="/2015/11/17/ypoj2258/">
-        ypoj 2258 E 网店
+        ypoj 2258 网店
       </a>
     </div>
   
   
     <div id="article-nav-older" class="article-nav-title">
       <a href="/2015/11/17/ypoj2256/">
-        ypoj 2256 C 闰年的生日
+        ypoj 2256 闰年的生日
       </a>
     </div>
   
@@ -333,7 +328,7 @@
 <!-- Show TOC and tocButton in default, Hide TOC via putting "toc: false" before "---" at [post].md -->
 <div id="toc" class="toc-article">
 <strong class="toc-title">文章目录</strong>
-<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#题目名称：公交搭乘问题"><span class="toc-number">1.</span> <span class="toc-text">题目名称：公交搭乘问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#描述"><span class="toc-number">1.1.</span> <span class="toc-text">描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#输入"><span class="toc-number">1.2.</span> <span class="toc-text">输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#输出"><span class="toc-number">1.3.</span> <span class="toc-text">输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#样例输入"><span class="toc-number">1.4.</span> <span class="toc-text">样例输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#样例输出"><span class="toc-number">1.5.</span> <span class="toc-text">样例输出</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#题解"><span class="toc-number">2.</span> <span class="toc-text">题解</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#这道题是一道模拟水题。其实题目大意懂了这道题就差不多了，不过要注意四个地方。"><span class="toc-number">2.0.1.</span> <span class="toc-text">这道题是一道模拟水题。其实题目大意懂了这道题就差不多了，不过要注意四个地方。</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#一开始汽车开的方向"><span class="toc-number">2.0.1.1.</span> <span class="toc-text">一开始汽车开的方向</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#当a站的位置在b站的前面时，又分为两种情况"><span class="toc-number">2.0.1.2.</span> <span class="toc-text">当a站的位置在b站的前面时，又分为两种情况</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#当人在a站和b站之间时,人要先到达终点再从终点到达a站,再从a站到达起点，再从起点到达b站"><span class="toc-number">2.0.1.2.1.</span> <span class="toc-text">当人在a站和b站之间时,人要先到达终点再从终点到达a站,再从a站到达起点，再从起点到达b站</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#当人在a站之前,人直接到达a站_再从a站到达b站"><span class="toc-number">2.0.1.2.2.</span> <span class="toc-text">当人在a站之前,人直接到达a站 再从a站到达b站</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码"><span class="toc-number">3.</span> <span class="toc-text">代码</span></a></li></ol>
+<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#题目名称：公交搭乘问题"><span class="toc-number">1.</span> <span class="toc-text">题目名称：公交搭乘问题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#描述"><span class="toc-number">1.1.</span> <span class="toc-text">描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#输入"><span class="toc-number">1.2.</span> <span class="toc-text">输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#输出"><span class="toc-number">1.3.</span> <span class="toc-text">输出</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#样例输入"><span class="toc-number">1.4.</span> <span class="toc-text">样例输入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#样例输出"><span class="toc-number">1.5.</span> <span class="toc-text">样例输出</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#题解"><span class="toc-number">2.</span> <span class="toc-text">题解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码"><span class="toc-number">3.</span> <span class="toc-text">代码</span></a></li></ol>
 </div>
 <style type="text/css">
   .left-col .switch-btn {
@@ -388,7 +383,7 @@
 
   <section id="comments">
     <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="post-ypoj2257" data-title="ypoj 2257 D 公交搭乘问题" data-url="http://ypacm.github.io/2015/11/17/ypoj2257/"></div>
+    <div class="ds-thread" data-thread-key="post-ypoj2257" data-title="ypoj 2257 公交搭乘问题" data-url="http://yoursite.com/2015/11/17/ypoj2257/"></div>
     <!-- 多说评论框 end -->
     <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
     <script type="text/javascript">
@@ -422,10 +417,10 @@
   
     
     <div  class="post-nav-button">
-    <a href="/2015/11/17/ypoj2258/" title="上一篇: ypoj 2258 E 网店">
+    <a href="/2015/11/17/ypoj2258/" title="上一篇: ypoj 2258 网店">
     <i class="fa fa-angle-left"></i>
     </a>
-    <a href="/2015/11/17/ypoj2256/" title="下一篇: ypoj 2256 C 闰年的生日">
+    <a href="/2015/11/17/ypoj2256/" title="下一篇: ypoj 2256 闰年的生日">
     <i class="fa fa-angle-right"></i>
     </a>
     </div>
